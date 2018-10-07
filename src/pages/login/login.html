@@ -1,0 +1,59 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+</ion-header>
+
+
+<ion-content text-center>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="logo-miaudote" src="../assets/imgs/logo-preto.png">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="tit-principal">MIAUDOTE</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="tit-secundario">Plataforma para adoção de animais</span>
+      </ion-col>
+    </ion-row>
+    <ion-row align-item-center>
+      <ion-col>
+        <button ion-button outline class="btn-facebook">
+          <ion-icon name="logo-facebook" class="icone-facebook"></ion-icon> Entrar com Facebook
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row padding>
+      <ion-col>
+        <span class="ou">ou</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span><a (click)="carregaCadastroUser()">Cadastre-se com e-mail</a></span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="faca-login" text-center>
+      <ion-col padding>
+        <span>Já tem uma conta? <a (click)="carregaLoginEmail()">Faça login</a></span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

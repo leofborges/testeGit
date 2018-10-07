@@ -1,0 +1,72 @@
+<!--
+  Generated template for the CadastroUserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cadastro de Usuário</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="salvarUsuario()">
+    <!--E-mail-->
+    <ion-item>
+      <ion-input [ngModelOptions]="{standalone: true}"  [(ngModel)]="usuario.email" text-center type="email" name="email" placeholder="E-mail" ngDefaultControl required></ion-input>
+    </ion-item>
+    <!--Nome Completo-->
+    <ion-item>
+      <ion-input [ngModelOptions]="{standalone: true}"  [(ngModel)]="usuario.nome" text-center type="text" name="nome" placeholder="Nome completo" ngDefaultControl required></ion-input>
+    </ion-item>
+    <!--Senha-->
+    <ion-item>
+      <ion-input [ngModelOptions]="{standalone: true}"  [(ngModel)]="usuario.senha" text-center type="password" name="senha" placeholder="Senha" ngDefaultControl required></ion-input>
+    </ion-item>
+     <!--Cidade-->
+     <ion-item>
+      <ion-input [ngModelOptions]="{standalone: true}"  [(ngModel)]="usuario.cidade" text-center type="text" name="cidade" placeholder="Cidade" ngDefaultControl required></ion-input>
+    </ion-item>
+    <!--Estado-->
+    <ion-item>
+      <ion-input [ngModelOptions]="{standalone: true}"  [(ngModel)]="usuario.estado" text-center type="text" name="estado" placeholder="Estado" ngDefaultControl required></ion-input>
+    </ion-item>
+    <!--Possui animal de estimação-->
+    <ion-list id="possui-animal" [ngModelOptions]="{standalone: true}" [(ngModel)]="usuario.possuiAnimal" radio-group ngDefaultControl required>
+      <ion-list-header>
+        Possui animal de estimação?
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio checked="true" value="true"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="false" ></ion-radio>
+      </ion-item>
+    </ion-list>
+    <!--Imagem do usuário-->
+    <ion-label>Foto de perfil</ion-label>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button icon-start (click)="tirarFoto()">
+            <ion-icon name="camera"></ion-icon>
+            Tirar foto
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button icon-start (click)="abrirGaleria()">
+            <ion-icon name="images"></ion-icon>
+            Enviar foto
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <button ion-button type="submit" color="secondary" class="btn-cadastrar" >Cadastrar</button>
+  </form>
+</ion-content>

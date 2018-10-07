@@ -1,0 +1,23 @@
+page-feed {
+
+}
+
+/*Item do feed*/
+
+/*Nome e Raça*/
+.nome-animal{font-size: 30px; font-weight: 600}
+.raca-animal{font-size: 12px; font-weight: 300}
+
+/*Icones*/
+.icone {font-size: 20px}
+.icone-menu{position: relative; z-index: 999; font-size: 25px}
+.icone-menu.ativo{color: #ff0000}
+
+/*Ver Mais*/
+.ver-mais{ margin-top:-20px; padding-bottom:5px; border-bottom: 2px solid #c0c0c0; margin-bottom:20px}
+.tit-ver-mais{font-size: 16px;}
+
+/*Menu inferior*/
+.menu-inferior a{color:#333}
+.menu-inferior{border-top:2px solid #c0c0c0; padding-top:10px; position: fixed; bottom: 0; background:#fff; z-index: 99; background: #f0f0f0;}
+.item-menu.borda{border-right: 1px solid #c0c0c0}

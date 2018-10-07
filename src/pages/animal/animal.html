@@ -1,0 +1,100 @@
+<!--
+  Generated template for the AnimalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Nome do Animal</ion-title>
+  </ion-navbar>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <!--Imagem do animal-->
+    <ion-row text-center>
+      <ion-col text-center class="img-animal">
+        <img src="../../assets/imgs/dog.jpg">
+      </ion-col>
+    </ion-row>
+    <ion-row padding>
+      <!--Nome do animal-->
+      <ion-col>
+        <span class="nome-animal">Totó</span><br>
+      </ion-col>
+      <!--Opções de ação-->
+      <ion-col col-5 class="opcoes-animal">
+        <ion-row text-center>
+          <!--Humor-->
+          <ion-col>
+            <i class="far fa-smile icone-acoes"></i>
+          </ion-col>
+          <!--Favorito-->
+          <ion-col>
+            <i class="far fa-heart icone-acoes"></i>
+          </ion-col>
+          <!--Compartilhar-->
+          <ion-col>
+            <i class="far fa-share-square icone-acoes"></i>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <!--Itens de descrição-->
+    <ion-row>
+      <ion-col col-12>
+        <ion-list>
+          <ion-item>
+            <span class="detalhe-animal">Raça</span>: Vira-lata <br>
+          </ion-item>
+          <ion-item>
+            <span class="detalhe-animal">Pelagem</span>: Vira-lata <br>
+          </ion-item>
+          <ion-item>
+            <span class="detalhe-animal">Sexo</span>: Vira-lata <br>
+          </ion-item>
+          <ion-item>
+            <span class="detalhe-animal">Castrado</span>: Vira-lata <br>
+          </ion-item>
+          <ion-item>
+            <span class="detalhe-animal">Vacinas</span>: Vira-lata <br>
+          </ion-item>
+          <ion-item>
+            <span class="detalhe-animal">Histórico</span>: Vira-lata <br>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <!--Descrição escrita-->
+    <ion-row class="desc-animal" padding-left padding-right>
+      <ion-col>
+        <p>Pimpolho é um cara bem legal, pena que não pode ver mulher,
+          ela tá dançando e o pimpolho tá de olho,
+          cuidado com a cabeça do pimpolho</p>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col padding-left padding-right>
+        <button ion-button color="secondary" class="btn-adotar" (click)="carregaMensagens()">Adotar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--Menu inferior-->
+  <ion-grid class="menu-inferior">
+    <ion-row text-center>
+      <ion-col class="item-menu borda"><a (click)="carregaFeed()"><i class="fas fa-paw icone icone-menu ativo"></i></a></ion-col>
+      <ion-col class="item-menu borda"><a (click)="carregaFavoritos()"><i class="far fa-heart icone icone-menu"></i></a></ion-col>
+      <ion-col class="item-menu borda"><i class="far fa-plus-square icone icone-menu"></i></ion-col>
+      <ion-col class="item-menu borda"><i class="fas fa-search icone icone-menu"></i></ion-col>
+      <ion-col class="item-menu"><i class="fas fa-user icone icone-menu"></i></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

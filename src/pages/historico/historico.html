@@ -1,0 +1,82 @@
+<!--
+  Generated template for the AnimalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Histórico de Usuário</ion-title>
+  </ion-navbar>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <!--Imagem do animal-->
+    <ion-row text-center>
+      <ion-col col-12>
+        <img class="img-user" src="../../assets/imgs/user.png">
+      </ion-col>
+    </ion-row>
+    <ion-row padding>
+      <!--Nome do animal-->
+      <ion-col text-center>
+        <span class="nome-animal">Totó</span><br>
+      </ion-col>
+    </ion-row>
+    <!--Itens de descrição-->
+    <ion-row>
+      <ion-col col-12>
+        <ion-list>
+          <ion-item>
+            <span class="detalhe-animal">Adotou</span>: 3 <br>
+          </ion-item>
+          <ion-item>
+            <span class="detalhe-animal">Doou</span>: 0 <br>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-row padding text-center align-items-center>
+    <ion-col padding>
+      <img src="../../assets/imgs/user.png">
+    </ion-col>
+    <ion-col padding text-center>
+        <img width="50" src="../../assets/imgs/direita.png">
+    </ion-col>
+    <ion-col padding>
+        <img src="../../assets/imgs/dog.jpg">
+    </ion-col>
+  </ion-row>
+
+  <ion-row padding text-center align-items-center>
+      <ion-col padding>
+        <img src="../../assets/imgs/user.png">
+      </ion-col>
+      <ion-col padding text-center>
+          <img width="50" src="../../assets/imgs/esquerda.png">
+      </ion-col>
+      <ion-col padding>
+          <img src="../../assets/imgs/dog.jpg">
+      </ion-col>
+    </ion-row>
+
+  <!--Menu inferior-->
+  <ion-grid class="menu-inferior">
+    <ion-row text-center>
+      <ion-col class="item-menu borda"><a (click)="carregaFeed()"><i class="fas fa-paw icone icone-menu ativo"></i></a></ion-col>
+      <ion-col class="item-menu borda"><a (click)="carregaFavoritos()"><i class="far fa-heart icone icone-menu"></i></a></ion-col>
+      <ion-col class="item-menu borda"><i class="far fa-plus-square icone icone-menu"></i></ion-col>
+      <ion-col class="item-menu borda"><i class="fas fa-search icone icone-menu"></i></ion-col>
+      <ion-col class="item-menu"><i class="fas fa-user icone icone-menu"></i></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

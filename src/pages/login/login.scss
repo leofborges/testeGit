@@ -1,0 +1,14 @@
+page-login {
+    .icone-facebook{font-size: 40px; margin-right: 10px}
+
+    .btn-facebook{padding: 5px}
+
+    .faca-login{position: fixed; bottom: 0; border-top: 1px solid #c0c0c0;width: 100%; background: #f0f0f0}
+
+    .ou {display: inline-block;position: relative; vertical-align: middle;}
+    .ou:before, .ou:after{content: "";position: absolute;height: 5px;border-bottom: 1px solid #c0c0c0;top: 5px;width: 100px;}
+    .ou:before {right: 100%;margin-right: 15px;}
+    .ou:after {left: 100%;margin-left: 15px;}
+}
+.logo-miaudote{max-width: 150px; height: auto; margin: auto; margin-top:10px}
+.tit-principal{font-family:"Arial"; font-size: 36px; text-transform: uppercase; color: #666; font-weight: 600}
